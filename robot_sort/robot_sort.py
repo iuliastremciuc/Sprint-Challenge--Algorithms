@@ -107,7 +107,7 @@ class SortingRobot:
             while self.can_move_right():
                 self.swap_item()
                 self.move_right()
-                # self.compare_item()
+                
                 if self.compare_item() == 1:
                     # if comparing value bigger, swap values
                     self.swap_item()
@@ -119,7 +119,7 @@ class SortingRobot:
             while self.can_move_left():
                 self.swap_item()
                 self.move_left()
-                # self.compare_item()
+                
                 # if comparing value less, swap values
                 if self.compare_item() == -1:
                     
@@ -130,7 +130,7 @@ class SortingRobot:
                 self.swap_item()
                 self.move_left()
 
-        pass
+            
 
 
 if __name__ == "__main__":
